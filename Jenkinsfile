@@ -1,15 +1,23 @@
 pipeline {
     agent any
     stages {
-        stage('Stage 1') {
+        stage('Clone repo') {
             steps {
-                echo 'Hello world!'
+                sh "rm -rf jenkins-test"
+                sh "git clone https://github.com/PeterBoberg/jenkins-test.git"
+                sh "mvn clean -f jenkins-test"
             }
         }
 
         stage('build') {
             steps {
-                mvn clean package
+                sh "mvn package -f jenkins-test"
+            }
+        }
+
+        stage('Say hello') {
+            steps {
+                sh "echo 'Hello there'"
             }
         }
     }
