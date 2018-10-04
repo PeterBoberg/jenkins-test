@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    properties([pipelineTriggers([pollSCM('H * * * *')])])
     stages {
         stage('Clone repo') {
             steps {
