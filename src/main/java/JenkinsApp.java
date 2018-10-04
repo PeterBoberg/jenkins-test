@@ -10,5 +10,6 @@ public class JenkinsApp {
 
         System.out.println("Adding more lines");
         System.out.println("Even more lines");
+        System.out.println("Another commit");
     }
 }
