@@ -3,15 +3,13 @@ pipeline {
     stages {
         stage('Clone repo') {
             steps {
-                sh "rm -rf jenkins-test"
-                sh "git clone https://github.com/PeterBoberg/jenkins-test.git"
-                sh "mvn clean -f jenkins-test"
+                sh "mvn clean"
             }
         }
 
         stage('build') {
             steps {
-                sh "mvn package -f jenkins-test"
+                sh "mvn package"
             }
         }
 
