@@ -7,5 +7,7 @@ public class JenkinsApp {
         System.out.println("Counting sheeps!");
         for (int i = 0; i < 10; i++)
             System.out.println("Sheep no: " + i);
+
+        System.out.println("Adding more lines");
     }
 }
