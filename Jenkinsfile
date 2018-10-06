@@ -1,15 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('Clone repo') {
+        stage('Cleaning ') {
             steps {
-                sh "mvn clean"
+                sh "echo 'STARTING BUILD'"
             }
         }
 
         stage('build') {
             steps {
-                sh "mvn package"
+                sh "mvn clean package"
             }
         }
 
