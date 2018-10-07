@@ -17,5 +17,6 @@ public class JenkinsApp {
         System.out.println("Cheking in even more lines");
         System.out.println("Cheking in even more lines");
         System.out.println("Cheking in even more lines");
+        System.out.println("I just wrote som more code");
     }
 }
