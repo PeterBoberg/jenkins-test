@@ -6,7 +6,15 @@
 
     <groupId>se.peter</groupId>
     <artifactId>jenkins-test</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
+
+    <distributionManagement>
+        <repository>
+            <id>petersArtifactory</id>
+            <name>ip-172-31-18-106-releases</name>
+            <url>http://3.120.16.209/artifactory/libs-snapshot</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>

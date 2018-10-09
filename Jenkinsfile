@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Cleaning ') {
+        stage('Echoing ') {
             steps {
                 sh "echo 'STARTING BUILD'"
             }
